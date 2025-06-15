@@ -32,7 +32,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/restaurant');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/restaurant');
 
 // Schemas
 const categorySchema = new mongoose.Schema({
