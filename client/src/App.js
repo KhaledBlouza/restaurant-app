@@ -4,7 +4,7 @@ import {
   ShoppingCart, Plus, Minus, Trash2, Check, Leaf, 
   Sparkles, ArrowLeft, Clock, Star, ChefHat, Award,
   MapPin, Heart, Info, X, Menu, 
-  Phone, Mail, Instagram, Facebook, Twitter
+  Phone, Mail, Instagram, Facebook
 } from 'lucide-react';
 
 // Configuration API
@@ -171,10 +171,10 @@ const Footer = () => (
       <div className="footer-section">
         <h4 className="footer-title">Suivez-nous</h4>
         <div className="social-links">
-          <a href="#" className="social-link">
+         <a href="https://instagram.com" className="social-link">
             <Instagram size={20} />
           </a>
-          <a href="#" className="social-link">
+          <a href="https://facebook.com" className="social-link">
             <Facebook size={20} />
           </a>
           
