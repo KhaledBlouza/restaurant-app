@@ -2699,7 +2699,7 @@ body::before {
 .logo-icon {
   z-index: 1;
   animation: logoRotate 20s infinite linear;
-  filter: drop-shadow(0 2px 4px rgba(255, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 @keyframes logoRotate {
