@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import './AdminDashboard.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://restaurant-app-production-f41b.up.railway.app/api';
 
 function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard');

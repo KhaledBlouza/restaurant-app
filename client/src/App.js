@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 // Configuration API
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://restaurant-app-production-f41b.up.railway.app/api';
 
 // Context pour le panier
 const CartContext = createContext();
@@ -313,7 +313,7 @@ function App() {
   // Fonction pour construire l'URL de l'image
   const getImageUrl = (imagePath) => {
     if (!imagePath) return null;
-    return `http://localhost:5000${imagePath}`;
+    return `https://restaurant-app-production-f41b.up.railway.app${imagePath}`;
   };
 
   if (error) {
