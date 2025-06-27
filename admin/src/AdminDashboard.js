@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import {
   BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
-import {
-  Edit2, Trash2, Upload, Leaf, Calendar, Image, FileText,
+import { Edit2, Trash2, Upload, Leaf, Calendar, Image, FileText,
   ChefHat, ShoppingBag, TrendingUp, DollarSign, Package, Sparkles,
-  Plus, Search, Filter, MoreVertical, CheckCircle, Clock, AlertCircle
-} from 'lucide-react';
+  Search, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 import './AdminDashboard.css';
 
 const API_URL = 'https://restaurant-app-production-f41b.up.railway.app/api';
@@ -33,16 +31,18 @@ function AdminDashboard() {
     image: null 
   });
 
-  useEffect(() => {
-    fetchCategories();
-    fetchDishes();
-    fetchOrders();
-    fetchStatistics(statsPeriod);
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchCategories();
+  fetchDishes();
+  fetchOrders();
+  fetchStatistics(statsPeriod);
+}, []);
 
-  useEffect(() => {
-    fetchStatistics(statsPeriod);
-  }, [statsPeriod]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchStatistics(statsPeriod);
+}, [statsPeriod]);
 
   const showToast = (message, type = 'success') => {
     setNotification({ message, type });
